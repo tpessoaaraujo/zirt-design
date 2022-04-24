@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 98vh;
+    width: 98vw;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+header > h1 {
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 20%;
+    margin: 1rem;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem;
+}
+
+#instagram {
+    margin: 0 1rem;
+    padding: 0.5rem;
+    background-color: lightgray;
+    font-size: 1.15rem;
+    
+}
+
+#whatsapp {
+    margin: 0 1rem;
+    padding: 0.5rem;
+    background-color: lightgray;
+    font-size: 1.15rem;
+}
+
+#whatsapp:hover, #instagram:hover {
+    background-color: #F32F79;
+}
+
+.fa-instagram {
+    margin-right: 0.5rem;
+}
+
+.fa-whatsapp {
+    margin-right: 0.5rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.8rem;
+    color: black;
+    font-size: 1.2rem;
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: black;
+}
+
+footer > p > a:hover {
+    text-decoration: none;
+    color: #F32F79;
+}
+
+.fa-external-link {
+    margin-left: -2px;
+}
+
+.copyright {
+    font-size: 0.8rem;
+}
+
+/* Responsividade para dispositivos móveis */
+
+@media screen and (max-width: 600px) {
+    .logo {
+        width: 50%;
+        margin: 1rem;
+    }
+}
